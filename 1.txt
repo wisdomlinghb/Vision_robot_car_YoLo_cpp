@@ -1,0 +1,5 @@
+
+export LD_LIBRARY_PATH=$HOME/third_party/onnxruntime/lib:$LD_LIBRARY_PATH
+./ai_inference
+
+source ~/my_robot_env/bin/activate

@@ -1,0 +1,9 @@
+build/
+deploy_pkg/
+onnxruntime/
+third_party/
+.vscode/
+*.swp
+*.o
+main_app
+neon_test
