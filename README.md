@@ -30,3 +30,27 @@
 ├── CMakeLists.txt        # 构建脚本
 └── README.md             # 项目说明
 
+## 🚀 快速开始 (Quick Start)
+
+### 1. 依赖安装
+```bash
+# 安装 OpenCV 和 编译工具
+sudo apt-get install libopencv-dev cmake g++
+
+### 3. 编译项目
+mkdir build && cd build
+cmake ..
+make
+
+## 3. 运行
+# 运行 SIMD 基准测试
+./neon_test
+
+# 运行主程序 (自动加载 ../models/best.onnx)
+./main_app
+
+#性能数据（Benchmark）
+模块,Naive C++,NEON SIMD,加速比
+图像预处理,2141 ms,457 ms,4.68x
+
+Author: Wisdomlinghb
